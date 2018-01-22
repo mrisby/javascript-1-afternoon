@@ -18,6 +18,13 @@ var name = 'Tyler';
 */
 
 //Code Here
+function isTyler(name){
+  if (name == 'Tyler'){
+    return true;
+  } else {
+    return false;
+  }
+};
 
 
 
@@ -28,7 +35,10 @@ var name = 'Tyler';
 */
 
 //Code Here
-
+function getName(){
+  let name = prompt('Please enter your name');
+  return(name);
+};
 
 
 ////////// PROBLEM 3 //////////
@@ -41,8 +51,11 @@ var name = 'Tyler';
 */
 
 //Code Here
+function welcome(){
+  let name = getName();
+  alert('Welcome,' + ' ' + name);
 
-
+};
 
 ////////// PROBLEM 4 //////////
 
@@ -50,7 +63,7 @@ var name = 'Tyler';
   What is the difference between arguments and parameters?
 */
 
-//Answer Here
+//Answer Here  parameters are temporary variable names and the arguments are the value assigned to that variable
 
 
 
@@ -60,7 +73,7 @@ var name = 'Tyler';
   What are all the falsy values in JavaScript and how do you check if something is falsy?
 */
 
-//Answer Here
+//Answer Here  false, null, undefined, 0, NaN, '', "",    
 
 
 
@@ -71,7 +84,9 @@ var name = 'Tyler';
 */
 
 //Code Here
-  
+ function myName(){
+   return "MiChelle";
+ }; 
 
 
 /*
@@ -79,7 +94,7 @@ var name = 'Tyler';
 */
 
 //Code Here
-
+let newMyName = myName;
 
 
 /*
@@ -87,7 +102,7 @@ var name = 'Tyler';
 */
 
 // Code Here
-
+alert(newMyName);
 
 
 ////////// PROBLEM 7 //////////
@@ -97,7 +112,11 @@ var name = 'Tyler';
 */
 
 //Code Here
-
+function outerFn(){
+ return function(){
+   return 'MiChelle';
+ };
+};
 
 
 /*
@@ -105,7 +124,7 @@ var name = 'Tyler';
 */
 
 //Code Here
-
+let innerFn = outerFn();
 
 
 /* 
@@ -113,3 +132,4 @@ var name = 'Tyler';
 */
 
 // Code Here
+innerFn();
